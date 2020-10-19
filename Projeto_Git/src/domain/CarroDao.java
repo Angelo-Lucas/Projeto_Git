@@ -81,7 +81,7 @@ public class CarroDao {
     
     public void alterarCarro(Carro obj){
         try {
-            String cmdsql = "update aluno set placa=?, modelo=?, "
+            String cmdsql = "update carro set placa=?, modelo=?, "
             + "marca=?, ano=?, tipo=?, cambio=?, combustivel=? where id=?";
             PreparedStatement stmt = conecta.prepareStatement(cmdsql);
             stmt.setString(1, obj.getPlaca());
