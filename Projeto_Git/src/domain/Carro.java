@@ -12,8 +12,7 @@ public class Carro {
     
     public Carro(){}
 
-    public Carro(int id, int placa, String modelo, String marca, int ano, String tipo, String cambio, String combustivel) {
-        this.id = id;
+    public Carro(int placa, String modelo, String marca, int ano, String tipo, String cambio, String combustivel) {
         this.placa = placa;
         this.modelo = modelo;
         this.marca = marca;
