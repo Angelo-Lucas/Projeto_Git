@@ -11,7 +11,7 @@ package domain;
  */
 public class FactoryCarro {
     
-    public Carro getCarro(int placa, String modelo, String marca, int ano, String tipo, String cambio, String combustivel){
+    public Carro getCarro(String placa, String modelo, String marca, int ano, String tipo, String cambio, String combustivel){
         Carro carro = new Carro(placa, modelo, marca, ano, tipo, cambio, combustivel);
         return carro;
     }

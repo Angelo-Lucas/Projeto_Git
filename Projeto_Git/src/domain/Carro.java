@@ -2,7 +2,7 @@ package domain;
 
 public class Carro {
     private int id;
-    private int placa;
+    private String placa;
     private String modelo;
     private String marca;
     private int ano;
@@ -12,7 +12,7 @@ public class Carro {
     
     public Carro(){}
 
-    public Carro(int placa, String modelo, String marca, int ano, String tipo, String cambio, String combustivel) {
+    public Carro(String placa, String modelo, String marca, int ano, String tipo, String cambio, String combustivel) {
         this.placa = placa;
         this.modelo = modelo;
         this.marca = marca;
@@ -30,11 +30,11 @@ public class Carro {
         this.id = id;
     }
 
-    public int getPlaca() {
+    public String getPlaca() {
         return placa;
     }
 
-    public void setPlaca(int placa) {
+    public void setPlaca(String placa) {
         this.placa = placa;
     }
 

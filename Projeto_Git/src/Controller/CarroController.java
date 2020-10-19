@@ -21,7 +21,7 @@ public class CarroController {
     public CarroController() {
     }
     
-    public void salvar(int placa, String modelo, String marca, int ano, String tipo, String cambio, String combustivel){
+    public void salvar(String placa, String modelo, String marca, int ano, String tipo, String cambio, String combustivel){
         try{
             FactoryCarro factory = new FactoryCarro();
             obj = factory.getCarro(placa, modelo, marca, ano, tipo, cambio, combustivel);
@@ -35,7 +35,7 @@ public class CarroController {
         }
     }
     
-    public void alterar(int placa, String modelo, String marca, int ano, String tipo, String cambio, String combustivel){
+    public void alterar(String placa, String modelo, String marca, int ano, String tipo, String cambio, String combustivel){
         try{
             FactoryCarro factory = new FactoryCarro();
             obj = factory.getCarro(placa, modelo, marca, ano, tipo, cambio, combustivel);
@@ -49,7 +49,7 @@ public class CarroController {
         }
     }
     
-    public void excluir(int placa, String modelo, String marca, int ano, String tipo, String cambio, String combustivel){
+    public void excluir(String placa, String modelo, String marca, int ano, String tipo, String cambio, String combustivel){
         try{
             FactoryCarro factory = new FactoryCarro();
             obj = factory.getCarro(placa, modelo, marca, ano, tipo, cambio, combustivel);
