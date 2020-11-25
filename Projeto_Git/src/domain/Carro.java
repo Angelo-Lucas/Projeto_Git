@@ -1,6 +1,8 @@
 package domain;
 
-public class Carro {
+import java.io.Serializable;
+
+public class Carro implements Serializable{
     private int id;
     private String placa;
     private String modelo;
